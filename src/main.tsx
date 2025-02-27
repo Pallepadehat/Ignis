@@ -6,7 +6,7 @@ import "./global.css"
 function App() {
   const [copySuccess, setCopySuccess] = React.useState(false)
   const [currentUrl, setCurrentUrl] = React.useState("")
-  
+
   React.useEffect(() => {
     // Get the current URL dynamically
     setCurrentUrl(`${window.location.protocol}//${window.location.host}?q=%s`)
@@ -23,17 +23,17 @@ function App() {
       <div className="max-w-3xl w-full space-y-12 p-8">
         <div className="space-y-6 text-center">
           <h1 className="text-6xl md:text-7xl font-semibold tracking-tight">
-            Ignis
+            Ignis {' '}
             <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Search
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-[#86868B] dark:text-[#86868B] leading-relaxed max-w-2xl mx-auto">
-            Experience lightning-fast search with smart redirects. 
+            Experience lightning-fast search with smart redirects.
             Harness the power of{' '}
-            <a 
-              href="https://duckduckgo.com/bang.html" 
-              target="_blank" 
+            <a
+              href="https://duckduckgo.com/bang.html"
+              target="_blank"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
             >
               bang commands
@@ -51,13 +51,13 @@ function App() {
               readOnly
               className="flex-1 bg-transparent px-4 py-3 text-[#1D1D1F] dark:text-white focus:outline-none font-mono text-sm rounded-md"
             />
-            <button 
+            <button
               onClick={handleCopy}
               className="px-6 py-3 bg-[#0071E3] hover:bg-[#0077ED] active:scale-95 rounded-lg transition-all duration-200 relative group flex items-center gap-2"
             >
-              <img 
-                src={copySuccess ? "/clipboard-check.svg" : "/clipboard.svg"} 
-                alt="Copy" 
+              <img
+                src={copySuccess ? "/clipboard-check.svg" : "/clipboard.svg"}
+                alt="Copy"
                 className="w-5 h-5 opacity-90"
               />
               <span className="text-sm font-medium text-white">
