@@ -112,10 +112,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Inspired by [DuckDuckGo's bang commands](https://duckduckgo.com/bang.html)
 - Built with React and TypeScript
-- Special thanks to all contributors and users
 
 ## 📬 Contact
-
-- Website: [t3.chat](https://t3.chat)
 - GitHub: [@pallepadehat](https://github.com/pallepadehat)
 - Project Link: [github.com/pallepadehat/ignis](https://github.com/pallepadehat/ignis)
